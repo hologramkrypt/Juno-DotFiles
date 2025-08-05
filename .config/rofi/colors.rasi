@@ -1,5 +1,5 @@
 * {
-  font:                   "Hack 12";
+  font:                   "Hack font 12";
   foreground:             #cdd6f4;   /* Text */
   background:             #1e1e2e;   /* Base */
   highlight:              #f5c2e7;   /* Pink */
