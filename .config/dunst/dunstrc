@@ -1,0 +1,39 @@
+[global]
+font = Hack 10
+frame_width = 2
+frame_color = "#5e81ac"
+separator_color = frame
+padding = 8
+horizontal_padding = 10
+corner_radius = 10
+background = "#262f3a"
+foreground = "#d8dee9"
+timeout = 5000
+transparency = 10
+markup = full
+icon_position = left
+max_icon_size = 64
+
+
+
+# Icons (optional)
+icon_position = left
+max_icon_size = 64
+
+[urgency_low]
+background = "#2c333f"
+foreground = "#cdd6e5"
+frame_color = "#434c5e"
+timeout = 3
+
+[urgency_normal]
+background = "#262f3a"
+foreground = "#d8dee9"
+frame_color = "#5e81ac"
+timeout = 8
+
+[urgency_critical]
+background = "#3b4252"
+foreground = "#eceff4"
+frame_color = "#88c0d0"    # Misty teal-blue
+timeout = 15
