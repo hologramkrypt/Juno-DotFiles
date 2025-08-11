@@ -6,10 +6,10 @@ Dependencies:
   btop
   copyq
   hypr
-  rofi
-  Thunar
+  nautilus
   waybar
   wofi
+  rofi
 *(Optional)*
   cava
   cmatrix
