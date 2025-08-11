@@ -1,1 +1,133 @@
+{
+  "layer": "top",
+  "position": "top",
 
+  "modules-left": [
+    "clock",
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+
+  "modules-center": [],
+
+  "modules-right": [
+    "temperature",
+    "battery",
+    "network",
+    "pulseaudio",
+    "bluetooth",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "<span color=\"#D8DEE9\">1</span>",
+      "2": "<span color=\"#88C0D0\">2</span>",
+      "3": "<span color=\"#A3BE8C\">3</span>",
+      "4": "<span color=\"#D8DEE9\">4</span>",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50,
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "  {:%H:%M %d %b}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "on-click": "gnome-calendar"
+  },
+
+  "battery": {
+    "format": " {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-discharging": " {capacity}%",
+    "tooltip": true,
+    "on-click": "gnome-power-statistics"
+  },
+
+  "temperature": {
+    "interval": 4,
+    "format": "{icon} {temperatureC}°C",
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "format-icons": ["", "", ""],
+    "critical-threshold": 74,
+    "format-critical": " {temperatureC}°C"
+  },
+
+  "custom/cpugovernor": {
+    "format": "{icon}",
+    "interval": 30,
+    "exec": "$HOME/.config/waybar/custom_modules/cpugovernor.sh",
+    "return-type": "json",
+    "format-icons": {
+      "perf": "",
+      "sched": ""
+    },
+    "min-length": 2,
+    "max-length": 2
+  },
+
+  "custom/gpu": {
+    "exec": "$HOME/.config/waybar/custom_modules/custom-gpu.sh",
+    "interval": 2,
+    "return-type": "json",
+    "format": "  {}",
+    "tooltip": "{tooltip}",
+    "max-length": 19,
+    "min-length": 19,
+    "on-click": "powerupp"
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "",
+    "family": "ipv4",
+    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nSignal: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "scroll-step": 3,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+  },
+
+  "bluetooth": {
+    "interval": 30,
+    "format": "{icon}",
+    "format-icons": {
+      "enabled": "",
+      "disabled": ""
+    },
+    "on-click": "blueberry"
+  },
+
+  "tray": {
+    "spacing": 5
+  }
+}
