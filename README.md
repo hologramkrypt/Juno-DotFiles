@@ -19,6 +19,9 @@
 - Hyprland
 - Hyprlock
 - Hyprshot
+- btop
+- htop
+- copyq
 - Dunst
 - Waybar
 - Wofi
@@ -27,6 +30,7 @@
 - swaybg
 ### Optional
 - cava
+- wallust
 - cmatrix
 - Spotify
 - Plex
@@ -35,13 +39,13 @@
 ##### To install dependencies, use the command;
 
 ```
-sudo dnf install hyprland hyprlock hyprshot dunst waybar wofi rofi feh swaybg
+sudo dnf install hyprland hyprlock hyprshot dunst waybar wofi rofi feh swaybg btop htop copyq
 ```
 
 ##### and for optional dependencies;
 
 ```
-sudo dnf install cmatrix cava fastfetch
+sudo dnf install cmatrix cava fastfetch wallust
 ```
 
 Installing Plex or Spotify are largely optional. This may be updated in the future when I get around to/learn theming those in a way that is appealing. However, you can install them at your leisure. 
