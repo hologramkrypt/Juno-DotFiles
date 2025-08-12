@@ -21,7 +21,6 @@
 - Dunst
 - Waybar
 - Wofi
-- Rofi
 - feh
 - swaybg
 ### Optional
