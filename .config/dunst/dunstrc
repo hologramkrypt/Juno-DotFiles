@@ -1,39 +1,47 @@
 [global]
-font = Hack 10
-frame_width = 2
-frame_color = "#5e81ac"
-separator_color = frame
-padding = 8
-horizontal_padding = 10
-corner_radius = 10
-background = "#262f3a"
-foreground = "#d8dee9"
-timeout = 5000
-transparency = 10
-markup = full
-icon_position = left
-max_icon_size = 64
-
-
-
-# Icons (optional)
-icon_position = left
-max_icon_size = 64
+    font = Hack 17
+    allow_markup = true
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    show_age_threshold = 60
+    word_wrap = true
+    ignore_newline = false
+    indicate_hidden = yes
+    shrink = no
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = mouse
+    sticky_history = yes
+    history_length = 20
+    show_indicators = yes
+    line_height = 0
+    separator_height = 1
+    padding = 10
+    horizontal_padding = 10
+    frame_width = 2
+    frame_color = "#eeeeee"
+    separator_color = frame
+    sort = yes
+    startup_notification = false
+    dmenu = dmenu -p dunst:
+    browser = xdg-open
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 64
 
 [urgency_low]
-background = "#2c333f"
-foreground = "#cdd6e5"
-frame_color = "#434c5e"
-timeout = 3
+    background = "#000000"
+    foreground = "#aaaaaa"
+    timeout = 2
 
 [urgency_normal]
-background = "#262f3a"
-foreground = "#d8dee9"
-frame_color = "#5e81ac"
-timeout = 8
+    background = "#000000"
+    foreground = "#eeeeee"
+    timeout = 4
 
 [urgency_critical]
-background = "#3b4252"
-foreground = "#eceff4"
-frame_color = "#88c0d0"    # Misty teal-blue
-timeout = 15
+    background = "#000000"
+    foreground = "#eeeeee"
+    frame_color = "#ff0000"
+    timeout = 8
