@@ -1,0 +1,34 @@
+﻿window {
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.5); /* semi-transparent */
+    color: #eeeeee;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 17px;
+    backdrop-filter: blur(10px); /* enables blur in some environments */
+}
+
+#input {
+    margin: 0px;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: #eeeeee;
+    padding: 10px;
+}
+
+#entry {
+    padding: 8px 12px;
+    border: none;
+    background-color: transparent;
+    color: #eeeeee;
+}
+
+#entry:selected {
+    background-color: rgba(34, 34, 34, 0.6);
+    color: #eeeeee;
+}
+
+#entry:insensitive {
+    color: #aaaaaa;
+}
