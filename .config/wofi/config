@@ -1,51 +1,12 @@
-[wofi]
-# General appearance
-show-icons=true
+mode=drun
+show=drun
+term=alacritty
+no-actions=true
+prompt="  Search"
+insensitive=true
+allow-markup=true
+hide-scroll=true
 width=400
-location=center
-border=none
-columns=1
 lines=10
-use-custom-font=true
-font=Cantarell 12
-
-# Colors (Nord palette, matching your bar)
-background=#2E3440
-foreground=#D8DEE9
-highlight=#434C5E
-highlight-foreground=#D8DEE9
-border-color=#4C566A
-
-# Window styling
-window-radius=6
-padding=12
-spacing=10
-
-# Selected item
-selected-background=#434C5E
-selected-foreground=#D8DEE9
-
-# Scrollbar
-scrollbar-width=6
-scrollbar-color=#4C566A
-scrollbar-background=#3B4252
-scrollbar-radius=3
-
-# Filter text input style
-filter-background=#3B4252
-filter-foreground=#D8DEE9
-filter-cursor-color=#D8DEE9
-filter-placeholder=#5E81AC
-
-# Separator line
-separator-color=#4C566A
-
-# Border for focused item
-item-border-color=#81A1C1
-item-border-width=1
-
-# Shadow (optional, subtle)
-window-shadow=true
-shadow-color=#00000080
-shadow-radius=10
-
+location=center
+allow-images=false
