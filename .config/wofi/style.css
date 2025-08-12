@@ -4,7 +4,7 @@
     border-radius: 10px;
     background-color: rgba(17, 17, 17, 0.5); /* semi-transparent */
     color: #eeeeee;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Hack Font";
     font-size: 17px;
     backdrop-filter: blur(10px); /* enables blur in some environments */
 }
