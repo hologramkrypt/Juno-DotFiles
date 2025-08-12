@@ -1,5 +1,5 @@
 [global]
-    font = Hack 17
+    font = Hack 13
     allow_markup = true
     format = "<b>%s</b>\n%b"
     alignment = left
