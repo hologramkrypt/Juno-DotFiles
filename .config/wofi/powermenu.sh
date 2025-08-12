@@ -7,7 +7,7 @@ options="  Lock\n⏾  Suspend\n🔄  Reboot\n⏻  Poweroff\n📥  Logout"
 choice=$(echo -e "$options" | wofi --dmenu --style ~/.config/wofi/style.css --prompt "Power Menu")
 
 case "$choice" in
-    "  Lock") 
+    "🔒  Lock") 
         swaylock ;;
     "⏾  Suspend") 
         systemctl suspend ;;
