@@ -1,34 +1,73 @@
-﻿window {
-    margin: 0px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(17, 17, 17, 0.5); /* semi-transparent */
-    color: #eeeeee;
-    font-family: "Hack Font";
-    font-size: 17px;
-    backdrop-filter: blur(10px); /* enables blur in some environments */
+* {
+  font-family: 'Hack Font', 'Inter', 'Segoe UI', 'NotoSans Nerd Font', sans-serif;
+  font-size: 13px;
+  color: #c6d0f5;
+  background-color: transparent;
 }
 
+/* Window Background */
+window {
+  background-color: #1a1b26;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Input box */
 #input {
-    margin: 0px;
-    border: none;
-    background-color: rgba(17, 17, 17, 0.5);
-    color: #eeeeee;
-    padding: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #99d1db;
+  margin-bottom: 10px;
 }
 
+/* Matching Entry (Text User Types) */
+#input:focus {
+  border: none;
+  outline: 1px solid rgba(153, 209, 219, 0.2);
+}
+
+/* The list of entries */
+#inner-box {
+  background-color: transparent;
+}
+
+/* Scroll box */
+#scroll {
+  margin-top: 5px;
+}
+
+/* Each item in the list */
 #entry {
-    padding: 8px 12px;
-    border: none;
-    background-color: transparent;
-    color: #eeeeee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 2px 0;
+  transition: background-color 0.2s ease-in-out;
 }
 
+/* Selected/hovered entry */
 #entry:selected {
-    background-color: rgba(34, 34, 34, 0.6);
-    color: #eeeeee;
+  background-color: rgba(153, 209, 219, 0.1);
+  color: #99d1db;
+  outline: none;
 }
 
-#entry:insensitive {
-    color: #aaaaaa;
+/* Entry hover effect (if supported) */
+#entry:hover {
+  background-color: rgb(41, 42, 53);
+}
+
+/* Prompt Text (if used) */
+#prompt {
+  color: #babbf1;
+  margin-right: 8px;
+}
+
+/* Custom colors for better clarity if you use modes or different wofi prompts */
+#entry:drop(active) {
+  background-color: #99d1db;
+  color: #1a1b26;
 }
